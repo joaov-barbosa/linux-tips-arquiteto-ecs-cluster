@@ -1,0 +1,2 @@
+# PASSA O ARN DA AMI ID RECOMENDADA PARA ECS CLUSTER
+aws ssm get parameters --names /aws/service/ecs/optimized-ami/amazon-linux2/recomended
