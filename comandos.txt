@@ -1,2 +1,7 @@
 # PASSA O ARN DA AMI ID RECOMENDADA PARA ECS CLUSTER
 aws ssm get parameters --names /aws/service/ecs/optimized-ami/amazon-linux2/recomended
+
+
+terraform apply --auto-approve -var-file=environment/dev/terraform.tfvars
+terraform plan -var-file=environment/dev/terraform.tfvars
+terraform init -backend-config=environment/dev/backend.t
